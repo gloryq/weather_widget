@@ -1,0 +1,51 @@
+body {
+    background-color:      #153B50FA;
+    color:                 #ECEBE4;
+    font-family:            Tahoma, sans-serif;
+    -webkit-app-region:     drag;
+}
+
+nav {
+    height:                 30px;
+}
+
+h1 {
+    text-align:             center;
+    margin:                 0%;
+}
+
+h3 {
+    margin:                 0%;
+}
+
+td {
+    margin:                 0%;
+    padding:                4px;
+    text-align:             center;
+}
+
+button {
+    -webkit-app-region:     no-drag;
+}
+
+.center {
+    margin-left:            auto;
+    margin-right:           auto;
+}
+
+.closeBtn {
+    float:                  right;
+    border:                 none;
+    background-color:       transparent;
+    color:                 #ECEBE4;
+    font-family:            Arial,sans-serif;
+    font-size:              15px;
+}
+
+.rightBorder {
+    border-right:           2px solid;
+}
+
+.temperature {
+    font-size:              6ch;
+}

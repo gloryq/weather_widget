@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel='stylesheet' href="style.css">
+</head>
+<body>
+    <nav>
+        Weather
+        <button id='closeBtn' class='closeBtn'>X</button>
+    </nav>
+
+    <h1 id='city'>City</h1>
+    <table class='center'>
+        <tr>
+            <td>
+                <h3 id='current_weather' class='rightBorder'>Weather</h3>
+            </td>
+            <td>
+                <h3 id='weather_desc'>weather description</h3>
+            </td>
+        </tr>
+        <tr>
+            <td colspan='2'>
+                <div id='temperature' class='temperature'>
+                    temperature
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan='2'>
+                <div id='feels_like'>feels like</div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan='2'>
+                <div id='high_low'>high/low</div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan='2'>
+                <div id='sunset'>sunset</div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan='2'>
+                <div id='wind_speed'>wind speed</div>
+            </td>
+        </tr>
+    </table>
+
+    <script>require('./config.js')</script>
+    <script>require('./getWeather.js')</script>
+    <script>require('./index.js')</script>
+
+</body>
+</html>

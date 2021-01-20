@@ -1,0 +1,35 @@
+{
+  "name": "weather_widget",
+  "version": "1.0.0",
+  "description": "Displays information on current weather, temperature, and sunset time. Data refreshes every 15 minutes",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "build": {
+    "appId": "your.id",
+    "mac": {
+      "category": "public.app-category.weather",
+      "icon": "build/icon.png"
+    },
+    "linux": {
+      "icon": "build/icon.png"
+    },
+    "win": {
+      "icon": "build/icon.png"
+    }
+  },
+  "keywords": [],
+  "author": "Glory Quan",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^11.1.1",
+    "electron-builder": "^22.9.1"
+  },
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
